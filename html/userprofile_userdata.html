@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Decobating - Your account</title>
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+        integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/userprofile_userdata.css">
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/6.6.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.6.1/firebase-firestore.js"></script>
+</head>
+
+<body id="roof"> 
+    <div id="header">
+        <div id="menu">
+            <a href="userprofile_userdata.html" id="a">            
+                <i class="far fa-user-circle"></i>
+            </a>
+            <!-- <div id="search">
+                <span id="bt-search"><i class="fas fa-search"></i></span>
+            </div>
+            <div><a href="about_us.html" class="bt-menu" id="about-us">About us</a></div>
+            <div><a href="events.html" class="bt-menu" id="events">Events</a></div>
+            <div><a href="debate_sociaties.html" class="bt-menu" id="debate-sociaty">Debate Sociaties</a></div> -->
+            <div><a href="debate_room.html" class="bt-menu" id="debate-room">Debate Room</a></div>
+            <div><a href="room_of_opinions.html" class="bt-menu" id="room-of-opinions">Room of opinions</a></div>
+            <!-- <div><a href="news.html" class="bt-menu" id="news">News</a></div> -->
+            <div><a href="home.html" class="bt-menu" id="home">Home</a></div>
+        </div>
+    </div>
+
+    <div id="user-box">
+        <div id="trans">
+            <div id="column1">
+                <div id="user-ava"></div>
+            </div>
+            <div id="column2">
+                <div id="username">plinh1000</div>
+                <div id="occupational-data">
+                    <div id="rank"><span>Rank: Novice</span></div>
+                    <div id="Level"><span>Level: 80</span></div>
+                    <div id="respect-point"><span>Respect points: 100</span></div>
+                </div>
+                <div id="self-intro">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam temporibus maiores provident</div>
+                <div id="bt-edit"><i class="far fa-edit"></i>Edit profile</div>
+            </div>
+        </div>
+    </div>
+
+    <div id="slidebar-second">
+        <div id="menu-box">
+            <div id="text-menu">Menu</div>
+            <div id="categories">
+                <div class="cate active" id="user-data">User Data</div>
+                <div class="cate" id="inter-events">Interested Events</div>
+                <div class="cate" id="re-match">Recent matches</div>
+                <div class="cate" id="re-opi">Recent opinions</div>
+                <div class="cate" id="ur-motion">Your motions</div>
+                <div class="cate" id="up-matche">Upcoming matches</div>
+                <div class="cate" id="de-club">Debate clubs</div>
+                <div class="cate haschild" id="setting">Setting</div>
+                <div class="cate haschild" id="help-box">Help</div>
+                <div class="cate" id="log-out">Log out</div>
+            </div>
+        </div>
+
+        <div id="userdata-box">
+            <div id="role">
+                <div id="debater-box" class="box">Debater</div>
+                <div id="adju-box" class="box">Adjudicators</div>
+            </div>
+            <div id="deco-line"></div>
+            <div id="data">
+                <div class="line">
+                    <div id="match" class="da">
+                        <div class="number">157</div>
+                        <div class="unit-text" id="text-matches">matches</div>
+                    </div>
+                    <div id="win-match" class="da">
+                        <div class="number">65</div>
+                        <div class="unit-text" id="text-winmatch">win matches</div>
+                    </div>
+                    <div id="overall" class="da">
+                        <div class="number">59<span>%</span></div>
+                        <div class="unit-text" id="text-overall">overall</div>
+                    </div>
+                </div>
+                <div class="line">
+                    <div id="bsp-in-match" class="da">
+                        <div class="number">5</div>
+                        <div class="unit-text" id="text-bestspeakerinmatch">best speaker in match</div>
+                    </div>
+                    <div id="bsp-in-team" class="da">
+                        <div class="number">8</div>
+                        <div class="unit-text" id="text-bestspeakerinteam">best speaker in team</div>
+                    </div>
+                    <div id="fav-format" class="da">
+                        <div class="format number">AP</div>
+                        <div class="unit-text" id="text-favformat">favourite format</div>
+                    </div>
+                </div>
+                <div id="text-frerole">frequently role</div>
+                <div id="unique-line">
+                    <select name="" id="select-format">
+                        <option value="" id="default">Asian Parliamentary</option>
+                        <option value="" id="BP">British Parliamentary</option>
+                        <option value="" id="WS">World School</option>
+                        <option value="" id="MUN">MUN</option>
+                    </select>
+                    <div id="role-box">
+                        <div id="person1" class="role">
+                            <div class="persontext" id="text-firstperson">1st person</div>
+                            <div class="data-role">
+                                <div class="match-num"><span>Matches:</span> 30 </div>
+                                <div class="win-rate"><span>Win rate:</span> 54% </div>
+                            </div>
+                        </div>
+                        <div id="person2" class="role">
+                            <div class="persontext" id="text-secondperson">2nd person</div>
+                            <div class="data-role">
+                                <div class="match-num"><span>Matches:</span> 30 </div>
+                                <div class="win-rate"><span>Win rate:</span> 54% </div>
+                            </div>
+                        </div>
+                        <div id="person3" class="role">
+                            <div class="persontext" id="text-thirdperson">3rd person</div>
+                            <div class="data-role">
+                                <div class="match-num"><span>Matches:</span> 30 </div>
+                                <div class="win-rate"><span>Win rate:</span> 54% </div>
+                            </div>
+                        </div>
+                        <div id="reply" class="role">
+                            <div class="persontext" id="reply">Reply person</div>
+                            <div class="data-role">
+                                <div class="match-num"><span>Matches:</span> 30 </div>
+                                <div class="win-rate"><span>Win rate:</span> 54% </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/userprofile_userdata.js"></script>
+</body>

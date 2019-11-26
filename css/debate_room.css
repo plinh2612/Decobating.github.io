@@ -1,0 +1,228 @@
+#roof {
+    margin: 0%;
+    background-color: rgb(230, 230, 230);
+}
+
+#help {
+    height: 65px;
+    width: 30%;
+    background-color: rgba(231, 231, 231, 0.959);
+}
+
+#header {
+    display: flex;
+    flex-flow: row;
+    height: 65px;
+}
+
+#bt-search { /*nút search */
+    background-color: rgba(0, 0, 0, 0);
+    margin: 12px;
+    cursor: pointer;
+}
+
+#menu {
+    height: 65px;
+    width: 100%;
+    display: flex;
+    flex-flow: row-reverse;
+    align-items: center;
+    background-color: rgb(231, 231, 231);
+    position: fixed;
+    z-index: 1;
+}
+
+.fa-user-circle {
+    font-size: 25px;
+    color: #383737ad;
+    padding: 30px;
+    cursor: pointer;
+}
+
+.fa-search {
+    font-size: 18px;
+    color: #383737ad;
+    padding: 2px;
+    cursor: pointer;
+}
+
+.bt-menu {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 150;
+    color: #1f2c31c4;
+    margin: 12px;
+    text-decoration: none;
+}
+
+#debate-room {
+    color: rgb(32, 32, 32);
+    font-size: 19px;
+}
+
+.bt-menu:hover {
+    color: rgb(32, 32, 32);
+    font-size: 19px;
+    transition: 0.2s;
+}
+
+.fa-search:hover {
+    font-size: 19px;
+    color: rgb(32, 32, 32);
+    transition: 0.2s;
+}
+
+.fa-user-circle:hover {
+    font-size: 26px;
+    color: rgb(32, 32, 32);
+    transition: 0.2s;
+}
+
+#slidebar-first {
+    max-width: 100%;
+    height: 650px;
+    background-image: url(https://images.unsplash.com/photo-1434030216411-0b793f4b4173?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80);
+    background-position-x: center;
+    background-position-y: -200px;
+    background-attachment: fixed;
+    background-size: cover;
+    margin-bottom: 50px;
+} 
+
+#transparent-div {
+    width: 100%;
+    height: 100%;
+    background-color: #2727278f;
+}
+
+#text-debateroom {
+    width: 100%;
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 70px;
+    font-weight: 700;
+    color: rgb(255, 255, 255); 
+    position: relative;
+    top: 36%;
+}
+
+#intro-debateroom {
+    width: 100%;
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 20px;
+    color: whitesmoke; 
+    position: relative;
+    top: 37%;
+}
+
+#container {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+}
+
+#formats {
+    width: 95%;
+    height: 110%;
+    background-color: rgb(250, 250, 250);
+    border-radius: 10px;
+    /* box-shadow: 0 16px 24px 2px rgba(0,0,0,.14), 0 6px 30px 5px rgba(0,0,0,.12), 0 8px 10px -5px rgba(0,0,0,.2); */
+    position: relative;
+    bottom: 150px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+ 
+#text-chooseyourformat {
+    position: relative;
+    top: 50px;
+    font-size: 35px;
+    font-family: 'Josefin Sans', sans-serif;
+    color: #292929ec;
+    margin-bottom: 10px;
+}
+
+#format-intro {
+    position: relative;
+    top: 50px;
+    font-size: 20px;
+    font-family: 'Quicksand', sans-serif;
+    width: 65%;
+    text-align: center;
+    color: #292929ec;
+}
+
+#formats-name {
+    display: flex;
+    flex-flow: row;
+    margin-top: 120px;
+    width: 90%;
+    justify-content: space-between;
+}
+
+.format {
+    width: 23.33%;
+    /* background-color: aqua; */
+    margin: auto 10px auto 10px;
+    cursor: pointer;
+}
+
+.icon {
+    font-size: 55px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 0.1px;
+    color: #272727e5;
+    position: relative;
+    transition: 0.5s;
+}
+
+.format:hover .icon {
+    transition: 0.5s;
+    font-size: 75px; 
+}
+
+.name {
+    font-size: 24px;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 3px;
+    color: #272727e5; 
+    margin-top: 10px;
+}
+
+.intro {
+    font-size: 15px;
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+    letter-spacing: 3px;
+    color: #272727e5; 
+    margin-top: 10px;
+}
+
+.modal {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #272727a4;
+    margin-top: -80%;
+    display: none;
+}
+
+.card {
+    width: 80%;
+    height: 80%;
+    background-color: rgb(230, 230, 230);
+    display: none;
+    margin: 60px auto 0 auto;
+    border-radius: 20px;
+    box-shadow: hsl(0, 0%, 53%) 0 0 16px;
+}
+
+ 
+

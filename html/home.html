@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Decobating - Sociaty of debaters</title>
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+        integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/home.css">
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/6.6.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.6.1/firebase-firestore.js"></script>
+</head>
+
+<body id="roof"> 
+    <div id="header">
+        <div id="menu">
+            <a href="userprofile_userdata.html" id="a">          
+                <i class="far fa-user-circle"></i>
+            </a>
+            <!-- <div id="search">
+                <span id="bt-search"><i class="fas fa-search"></i></span>
+
+            </div> -->
+
+
+            <!-- <div><a href="about_us.html" class="bt-menu" id="about-us">About us</a></div>
+            <div><a href="events.html" class="bt-menu" id="events">Events</a></div>
+            <div><a href="debate_sociaties.html" class="bt-menu" id="debate-sociaty">Debate Sociaties</a></div> -->
+            <div><a href="debate_room.html" class="bt-menu" id="debate-room">Debate Room</a></div>
+            <div><a href="room_of_opinions.html" class="bt-menu" id="room-of-opinions">Room of opinions</a></div>
+            <!-- <div><a href="news.html" class="bt-menu" id="news">News</a></div> -->
+            <div><a href="home.html" class="bt-menu" id="home">Home</a></div>
+        </div>
+    </div>
+
+    <div id="content">
+        <div id="image">
+            <div id="transparent">
+                <div id="title">
+                    <div id="help2"></div>
+                    <!--chỉnh cho đẹp-->
+                    <div id="text-DEBATE">debate</div>
+                    <div id="text-pro">/dɪˈbeɪt/</div>
+                    <div id="text-def">An argument about a particular subject, especially one in which many people are
+                        involved </div>
+                </div>
+                <div id="summary">
+                    <div id="help3"></div>
+                    <!--chỉnh cho đẹp-->
+                    <div id="News" > <a href="news.html" class="rubric"> NEWS </a><div class="writing"> A new version of ABP</div>
+                    </div>
+                    <div id="Events" > <a href="events.html" class="rubric">EVENTS</a><div class="writing"> National Novice Debating Championship
+                        </div>
+                    </div>
+                    <div id="Debate room" ><a href="debate_room.html" class="rubric" >DEBATE ROOM</a> <div class="writing"> Chúng tôi sẽ lắp bao cao su
+                            tại trường học</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="sidebar-second">
+        <div id="text-comma"><i class="fas fa-quote-left"></i></div>
+        <div id="text-quote">Those who cannot understand how to put their thoughts on ice should not enter into the heat
+            of debate.</div>
+        <div id="author">Friedrich Nietgsche</div>
+    </div>
+
+    <div id="sidebar-third">
+        <div id="help4"></div>
+        <!--chỉnh cho đẹp-->
+        <div id="text-box">
+            <div id="transparent2">
+                <div id="help5"></div>
+                <!--chỉnh cho đẹp-->
+                <div id="text-popular-debate-format">POPULAR DEBATE FORMAT</div>
+                <div id="help6"></div>
+                <div id="format">
+                    <div class="help7"></div>
+                    <!--chỉnh cho đẹp-->
+                    <div id="format1" class="format">
+                        <div id="text-asian-parliamentary" class="format-text">Asian Parliamentary</div>
+                        <div class="format-introtext">AP format, also known as Asian Parliamentary, is the format
+                            usually used in competitions for Asian high schools and universities. Each round consist of
+                            two teams: the supporting team (Government) and the opposing team (Oppposition), each team
+                            has 3 members. Team Government has three position: Prime Minister, Deputy Prime Minister and
+                            Goverment Whip. Team Opposition has three positions: Leader of Opposition and Opposition
+                            Whips.</div>
+                        <div class="bt-knowmore">
+                            <div id="help8">
+                                <!--chỉnh cho đẹp-->
+                            </div> Know more
+                        </div>
+                    </div>
+                    <div id="format2" class="format">
+                        <div id="text-british-parliamentary" class="format-text">British Parliamentary</div>
+                        <div class="format-introtext">BP format, also known as British Parliamentary, is a debating
+                            format used in many formal international debating compertition involing high school as well
+                            as university institution. This format required a total of four teams seperated into two
+                            side, Government (support) and Opposition (againts) and two benches, Opening and Closing,
+                            with each bench siting in one straight row.</div>
+                        <div class="bt-knowmore">
+                            <div id="help8">
+                                <!--chỉnh cho đẹp-->
+                            </div> Know more
+                        </div>
+                    </div>
+                    <div id="format3" class="format">
+                        <div id="text-world-school" class="format-text">World School</div>
+                        <div class="format-introtext">World School debating format, obtaining its name from the World
+                            Schools Debating Championship, the largest high-school debating compertition, largly
+                            resembles AP format.Six speakers will be divided into two teams, Proposition and Opposition,
+                            3 speakers on each team. Members will be marked P1, P2, P3 for Proposition and 1 reply
+                            speaker; O1, O2, O3 for Opposition and 1 reply speaker. </div>
+                        <div class="bt-knowmore">
+                            <div id="help8">
+                                <!--chỉnh cho đẹp-->
+                            </div> Know more
+                        </div>
+                    </div>
+                    <div class="help7"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="sidebar-forth">
+        <div id="background"></div>
+        <div id="image4"></div>
+        <div id="text-upper"> A perfect place for</div>
+        <div id="text-development">DEVELOPMENT</div>
+        <div id="text-intro"> Discover our feature right now! </div>
+        <div id="features">
+            <div class="ft" id="ft-roomofopinion">ROOM OF OPINIONS <br> <i class="fas fa-comments icon"></i></div>
+            <div class="ft" id="ft-debateroom">DEBATE ROOM <br> <i class="fas fa-gavel icon"></i></div>
+            <div class="ft" id="ft-debatesociaties">DEBATE SOCIATIES <br> <i class="fas fa-users icon"></i></div>
+            <div class="ft" id="ft-events">EVENTS <br> <i class="far fa-calendar-alt icon"></i></div>
+        </div>
+
+    </div>
+
+    <div id="sidebar-fifth">
+        <div id="help9"></div>
+        <!--chỉnh cho đẹp-->
+        <div id="content">
+            <div id="help10"></div>
+            <!--chỉnh cho đẹp-->
+            <div id="image-title">
+                <div id="transparent3">
+                    <div id="text-joinus">JOIN US</div>
+                    <div id="text-slogan">To experience debate right on your seat.</div>
+                </div>
+            </div>
+            <div id="login">
+                <div id="text-registerhere">REGISTER HERE</div>
+                <div id="line"></div>
+                <div id="help11"></div>
+                <!--chỉnh cho đẹp-->
+                <div id="username-div" class="login-div"><input id="username" class="long-bt" type="text" value=""
+                        placeholder="Enter your Username" required></div>
+                <div class="help12"></div>
+                <!--chỉnh cho đẹp-->
+                <span id="country-div" class="half-login-div"><input type="text" class="short-bt" id="country" value=""
+                        placeholder="Your Country" required></span>
+                <span id="city-div" class="half-login-div"><input type="text" class="short-bt2" id="city" value=""
+                        placeholder="Your City" required></span>
+                <div class="help12"></div>
+                <!--chỉnh cho đẹp-->
+                <div id="email-div" class="login-div"><input id="email" class="long-bt" type="email" value=""
+                        placeholder="Your Email" required></div>
+                <div class="help12"></div>
+                <!--chỉnh cho đẹp-->
+                <span id="password-div" class="half-login-div"><input type="password" class="short-bt" id="password"
+                        value="" placeholder="Your Password" required></span>
+                <span id="confirm-div" class="half-login-div"><input type="password" class="short-bt2" id="confirm"
+                        value="" placeholder="Confirm your Password" required></span><i id="btn-eye"
+                    class="fas fa-eye"></i>
+                <div class="help12"></div>
+                <!--chỉnh cho đẹp-->
+                <input id="checkbox" checked type="checkbox"> <label for="checkbox"><span id="text-keepmesignin">Keep me
+                        sign in</span></label> <span id="text-forgotpassword"><b>Forgot password?</b></span>
+                <div class="help12"></div>
+                <!--chỉnh cho đẹp-->
+                <span><input type="submit" class="bt-black" id="bt-signup" value="Sign up" required></span>
+                <span id="help13">or</span>
+                <!--chỉnh cho đẹp-->
+                <span><input type="submit" class="bt-black" id="bt-signin" value="Sign in" required></span>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer">
+        <div id="footer-image" class="footer-sq"></div>
+        <div id="square2" class="footer-sq"></div>
+        <div id="square3" class="footer-sq"></div>
+    </div>
+    
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#config-web-app -->
+
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyDwSFgTQF616FzGQQWmd1Oal7aMefTO4TQ",
+            authDomain: "wetech-1920.firebaseapp.com",
+            databaseURL: "https://wetech-1920.firebaseio.com",
+            projectId: "wetech-1920",
+            storageBucket: "",
+            messagingSenderId: "499314923660",
+            appId: "1:499314923660:web:bb7bae8eb3ec96102843a9"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        const db = firebase.firestore();
+        db.settings({ timestampsInSnapshots: true });
+    </script>
+    <script src="../js/home.js"></script>
+</body>
+
+</html>

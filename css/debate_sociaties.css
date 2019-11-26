@@ -1,0 +1,429 @@
+#roof {
+    margin: 0%;
+    background-color: whitesmoke;
+}
+
+#help {
+    height: 65px;
+    width: 30%;
+    background-color: rgba(231, 231, 231, 0.959);
+}
+
+#header {
+    display: flex;
+    flex-flow: row;
+    height: 65px;
+}
+
+#bt-search { /*nút search */
+    background-color: rgba(0, 0, 0, 0);
+    margin: 12px;
+    cursor: pointer;
+}
+
+#menu {
+    height: 65px;
+    width: 100%;
+    display: flex;
+    flex-flow: row-reverse;
+    align-items: center;
+    background-color: rgb(231, 231, 231);
+    position: fixed;
+    z-index: 1;
+}
+
+.fa-user-circle {
+    font-size: 25px;
+    color: #383737ad;
+    padding: 30px;
+    cursor: pointer;
+}
+
+.fa-search {
+    font-size: 18px;
+    color: #383737ad;
+    padding: 2px;
+    cursor: pointer;
+}
+
+.bt-menu {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 150;
+    color: #1f2c31c4;
+    margin: 12px;
+    text-decoration: none;
+}
+
+#debate-sociaty {
+    color: rgb(32, 32, 32);
+    font-size: 19px;
+}
+
+.bt-menu:hover {
+    color: rgb(32, 32, 32);
+    font-size: 19px;
+    transition: 0.2s;
+}
+
+.fa-search:hover {
+    font-size: 19px;
+    color: rgb(32, 32, 32);
+    transition: 0.2s;
+}
+
+.fa-user-circle:hover {
+    font-size: 26px;
+    color: rgb(32, 32, 32);
+    transition: 0.2s;
+}
+
+#slidebar-first {
+    max-width: 100%;
+    height: 700px;
+    background-image: url(https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1951&q=80);
+    background-position-x: center;
+    background-attachment: fixed;
+    background-size: cover;
+    margin-bottom: 50px;
+} 
+
+#transparent-div {
+    width: 100%;
+    height: 100%;
+    background-color: #2727278f;
+}
+
+#text-debatesocieties {
+    width: 100%;
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 70px;
+    font-weight: 700;
+    color: rgb(255, 255, 255); 
+    position: relative;
+    top: 36%;
+}
+
+#intro-debateroom {
+    width: 100%;
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 20px;
+    color: whitesmoke; 
+    position: relative;
+    top: 37%;
+}
+
+#place-box {
+    display: flex;
+    justify-content: center;
+    background-color: aqua;
+    margin: -370px auto; 
+    width: 370px;
+    border: solid #ddddddfa 3px;
+    background-color: #0000002c;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+
+#select-place {
+    width: 350px;
+    height: 50px;
+    padding-left: 20px;
+    padding-right: 10px;
+    appearance: button-bevel;
+    -moz-appearance: button-bevel;
+    -webkit-appearance: button-bevel;
+    outline: none;
+    font-family: 'Quicksand', sans-serif;
+    background-color: #00000000;
+    border: none;
+    color: whitesmoke;
+    cursor: pointer;
+}
+
+option {
+    background-color: #1b1b1bf3;
+    color: whitesmoke;
+    border: none;
+    outline: none;
+}
+
+#slidebar-second {
+    width: 100%;
+    height: 700px;
+    margin-top: 750px;
+    display: flex;
+    flex-flow: column;
+}
+
+#text-somedebatesocieties {
+    width: 100%;
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 43px;
+    text-transform: uppercase;
+}
+
+#next-bt {
+    z-index: 1;
+    position: relative;
+    top: 265px;
+    width: 97%;
+    margin: 0px 1.5% 0px 1.5%;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    font-size: 40px;
+    color: #252525e5;
+}
+
+#left:hover, #right:hover {
+    color: #1a1a1ab6;
+}
+
+#club-container {
+    width: 90%;
+    height: 420px;
+    margin: 30px auto 0px auto;
+    /* background-color: aqua; */
+    justify-content: space-between;
+    display: flex;
+    flex-flow: row;
+    z-index: 0;
+}
+
+.club {
+    width: 23%;
+    height: 100%;
+    background-color: rgb(255, 255, 255);   
+    border-radius: 5px; 
+    box-shadow: hsl(0, 0%, 80%) 0 0 16px;
+}
+
+.club-img {
+    width: 100%;
+    height: 280px;
+    background-color: rgb(27, 37, 37);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.intro-club {
+    padding: 5px 10px 15px 15px;
+    color: #1d1d1d;
+}
+
+.club-name {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 28px;
+    margin-top: 8px;
+    margin-bottom: 4px;
+}
+
+.club-place {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 16px;
+    margin-bottom: 4px;
+}
+
+.club-online-debaters {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 15px;
+}
+
+.knowmore {
+    width: 120px;
+    height: 15px;
+    padding-top: 2px;
+    text-align: left;
+    font-family: 'Quicksand', sans-serif; 
+    font-size: 15px;
+    margin-left: 15px;
+    position: relative;
+    color: #1d1d1d;
+    cursor: pointer;
+}
+
+.fa-arrow-right {
+    text-indent: 7px;
+}
+
+.knowmore:hover {
+    transition: 0.5s;
+    position: relative;
+    animation: move 0.7s ease-in infinite alternate;
+    -moz-animation:  move 0.7s ease-in infinite alternate;
+    -webkit-animation:  move 0.7s ease-in infinite alternate;
+    -o-animation:  move 0.7s ease-in infinite alternate;
+}
+
+@keyframes move {
+    from {left:0;}
+    to {left:15px;}
+}
+
+@-moz-keyframes move {
+    from {left:0;}
+    to {left:15px;}
+}
+
+@-webkit-keyframes move {
+    from {left:0;}
+    to {left:15px;}
+}
+
+@-o-keyframes move {
+    from {left:0;}
+    to {left:15px;}
+}
+
+#slidebar-third {
+    width: 100%;
+    height: 2100px;
+}
+
+#text-outstanding-debaters {
+    width: 100%;
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 43px;
+    text-transform: uppercase;
+}
+
+#choose-bt {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    margin-top: 17px;
+}
+
+.time-bt {
+    width: 120px;
+    max-height: 100%;
+    margin: 0px 7px 0px 5px;
+    font-family: 'Quicksand', sans-serif; 
+    background-color: rgb(25, 26, 26);
+    border: 2px #1a1a1ad3 solid;
+    color: whitesmoke;
+    border-radius: 30px;
+    text-align: center;
+    padding-top: 7px;
+    cursor: pointer;
+}
+
+.time-bt:hover {
+    background-color: whitesmoke;
+    color: rgb(25, 26, 26);
+}
+
+#best-container {
+    width: 85%;
+    height: 1500px;
+    display: flex;
+    flex-flow: column;
+    margin: 0 auto 0 auto;
+}
+
+#best-container {
+    margin-top: 10px;
+}
+
+.best-speaker {
+    width: 100%;
+    height: 25%;
+    margin-top: 80px;
+    display: flex;
+    flex-flow: row;
+}
+
+.normal {
+    flex-flow: row;
+}
+
+.reverse {
+    flex-flow: row-reverse;
+}
+
+.debater-info {
+    width: 45%;
+    height: 80%;
+    margin-top: 5%;
+    font-size: 17px;
+    font-family: 'Quicksand', sans-serif; 
+}
+
+.debater-image::after{
+    content: "";
+    position: absolute;
+    background-color: rgba(24, 24, 24, 0.068);
+    width: 100%;
+    height: 100%;
+    bottom: 25px;
+    left: 25px;
+    z-index: -1;
+}
+
+.debater-image {
+    width: 50%;
+    height: 100%;
+    background-color: rgb(46, 46, 46);
+    margin-right: 20px;
+    position: relative;
+    display:block;
+    transition: all 0.5s ease-in-out;
+}
+
+#debater-image1 {
+    background-image: url(https://images.unsplash.com/photo-1496840220025-4cbde0b9df65?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1868&q=80);
+    background-size: cover;
+    background-position-y: -350px;
+}
+
+#debater-image2 {
+    background-image: url(https://images.unsplash.com/photo-1500336624523-d727130c3328?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1868&q=80);
+    background-size: cover;
+    background-position-y: -350px;
+}
+
+#debater-image3 {
+    background-image: url(https://images.unsplash.com/photo-1488161628813-04466f872be2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1900&q=80);
+    background-size: cover;
+    background-position-y: -250px;
+}
+
+.username, .spfrom, .achievement, .slogan {
+    margin-left: 50px;
+    margin-top: 7px;
+    margin-right: 30px;
+}
+
+.slogan {
+    font-style: italic;
+}
+
+.username {
+    margin-top: 15%;
+    font-family: 'Josefin Sans', sans-serif;
+    text-transform: uppercase;
+    font-size: 35px;
+}
+
+#text-loadthemonthlychart {
+    width: 100%;
+    text-align: center;
+    font-family: 'Quicksand', sans-serif; 
+    font-size: 17px;
+    margin-top: 90px;
+    color: #25252580;
+}
+
+#load-more:hover {
+    color: #1d1d1d;
+    cursor: pointer;
+}
